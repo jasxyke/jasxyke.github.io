@@ -141,7 +141,7 @@ nav{
 
 #my-name{
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: 'Nunito', 'Glory', sans-serif;
   color: white;
 }
@@ -161,9 +161,13 @@ nav{
   border-radius: 15px;
 }
 
-.about-item h2,
-.about-item p{
-  font-size: 1.2rem;
+.about-item h2
+{
+  font-size: 1.8rem;
+}
+.about-item p,
+.about-item li{
+  font-size: 1.5rem;
 }
 
 .about-me{

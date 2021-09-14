@@ -108,7 +108,8 @@ nav{
 
 .about-section{
   width: 100%;
-  height:100vh;
+  height:auto;
+  margin-bottom:20vh;
 }
 
 .about-image-container{
@@ -205,7 +206,7 @@ nav{
 }
 
 .project-image{
-  height: 45vh;
+  height: 50vh;
   width: 100%;
   object-fit: cover;
   object-position: center top;

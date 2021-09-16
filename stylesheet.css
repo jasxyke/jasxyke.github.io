@@ -214,7 +214,7 @@ nav{
   transition: transform .2s;
 }
 
-.project-image{
+.project-image:hover{
   object-fit: fill;
   transform: scale(1.3);
 }

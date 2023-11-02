@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web developer portfolio - Jaspher Xyke Cortez</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- local css -->
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar-container">
+        <div class="main-navbar container">
+          <a class="logo" href="#home"
+            >Jasxyke.<span class="text-orange">dev</span></a
+          >
+          <nav class="desktop-nav">
+            <ul class="nav__links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <img
+            onclick="closeNavbar()"
+            class="menu"
+            src="/assets/hamburger_menu.svg"
+            alt="menu"
+          />
+        </div>
+      </div>
+
+      <nav class="mobile-nav">
+        <img src="/assets/x_icon.svg" alt="x_icon" class="x-icon" />
+        <ul class="">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home" class="intro-banner">
+      <div class="home-banner">
+        <div class="greetings-banner">
+          <div class="greetings">
+            <h2>Hello, <span class="text-orange">I am</span></h2>
+            <h1 class="display-2 mb-4 my-name">Jaspher</h1>
+            <p class="text-gray">
+              Aspiring full-stack web developer from the Polytechnic University
+              of the Philippines
+            </p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <img class="my-picture" src="./assets/selfie.jpg" alt="my image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section bg-grey p-5">
+      <div class="text-center mb-4">
+        <h1>About me</h1>
+      </div>
+      <div class="about-container container">
+        <div class="about-info-box">
+          <h3>Education</h3>
+          <p class="about-header">College</p>
+          <p>Polytechnic University of the Philippines - San Juan Campus</p>
+          <p>Bacherlor's of Science in Information Technology</p>
+          <p>(2023 - Present)</p>
+          <p></p>
+          <p>
+            Polytechnic University of the Philippines - Institute of Technology
+          </p>
+          <p>Diploma in Information Communication Technology</p>
+          <p>(2020 - 2023)</p>
+          <p class="about-header">Senior High School</p>
+          <p>AMA Computer College Pasig Campus</p>
+          <p>TVL track – Information Communication Technology Strand</p>
+          <p>(2018 - 2020)</p>
+        </div>
+        <div class="about-info-box"><h3>Experience</h3></div>
+        <div class="about-info-box"><h3>Skills/Achievements</h3></div>
+      </div>
+    </section>
+
+    <!-- scripts -->
+    <script src="./scripts/navbar.js"></script>
+  </body>
+</html>

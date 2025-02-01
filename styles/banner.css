@@ -33,22 +33,25 @@ p {
 }
 
 .hello {
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
 .my-name {
-  font-size: 5rem;
+  /* font-size: 5rem; */
+  font-size: clamp(3.5rem, 4vw, 5rem);
   color: var(--bright-blue);
   letter-spacing: 4px;
   font-family: "Anton", Arial, sans-serif;
 }
 
 .my-picture {
-  max-width: 100%;
-  height: auto;
-  /* max-height: 275px; */
-  border-radius: 50%;
   border: 5px solid var(--gray);
+  max-width: 100%; /* Ensures the image does not exceed its container */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Removes extra spacing below inline images */
+  margin: 0 auto; /* Centers the image */
+  border-radius: 50%; /* Optional: Adds rounded corners for a smoother look */
 }
 
 .call-to-action {
@@ -85,13 +88,15 @@ p {
 
 @media only screen and (max-width: 768px) {
   #home {
-    padding: 15px;
+    padding: 50px 15px;
   }
   .home-banner {
     width: 100%;
   }
   .greetings-banner {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column-reverse;
   }
   .greetings {
@@ -102,14 +107,20 @@ p {
     justify-content: center;
   }
   .my-picture {
-    width: 100%;
-    height: auto;
+    width: 40%;
   }
   .cta-btn {
     position: static;
     bottom: unset;
-    padding: 10px 30px;
+    padding: 10px 15px;
     font-size: 1rem;
     margin-top: 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-picture {
+    width: 80%; /* Makes the image fully responsive on mobile */
   }
 }

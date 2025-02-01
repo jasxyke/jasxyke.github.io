@@ -50,6 +50,16 @@ body {
   text-decoration-thickness: 4px;
 }
 
+.title-header {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Anton";
+  margin-bottom: 15px;
+  text-decoration: underline;
+  text-decoration-color: var(--bright-blue);
+  text-decoration-thickness: 4px;
+}
+
 .gray-text {
   color: var(--gray);
 }
@@ -62,4 +72,20 @@ body {
 .underline-blue {
   text-decoration: underline;
   text-decoration-color: var(--bright-blue);
+}
+
+.skills-capsules {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 5px;
+  margin-top: 10px;
+}
+
+.capsule {
+  border-radius: 15px;
+  padding: 5px 15px;
+  background-color: var(--matte-black);
+  color: var(--bright-blue);
 }

@@ -19,9 +19,13 @@
   padding: 30px 20px;
   height: 100%;
   /* border: 1px solid var(--bright-blue); */
-  border: 3px solid var(--matte-black);
+  border: 1px solid var(--matte-black);
   border-radius: 15px;
   box-shadow: 10px 10px 5px;
+  transition: 0.3s ease-out;
+}
+
+.experience:hover {
 }
 
 .experience p {
@@ -44,30 +48,20 @@
   object-fit: contain;
 }
 
-.skills-capsules {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 10px;
-  margin-top: 10px;
-}
-
-.capsule {
-  border-radius: 15px;
-  padding: 5px 15px;
-  background-color: var(--matte-black);
-  color: var(--bright-blue);
-}
-
 @media only screen and (max-width: 768px) {
   #experiences {
     display: block;
     padding: 20px;
+    height: unset;
   }
   .experience-container {
     display: flex;
     row-gap: 25px;
     flex-wrap: wrap;
-    height: fit-content;
+    height: unset;
+  }
+  .experience {
+    border: unset;
+    box-shadow: unset;
   }
 }

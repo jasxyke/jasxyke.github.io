@@ -55,7 +55,7 @@
   .project {
     display: flex;
     flex-wrap: wrap;
-    padding: 30px 30px;
+    padding: 20px;
     border: unset;
     box-shadow: unset;
   }

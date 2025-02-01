@@ -63,5 +63,6 @@
   .experience {
     border: unset;
     box-shadow: unset;
+    padding: 15px;
   }
 }

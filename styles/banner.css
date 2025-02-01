@@ -1,0 +1,115 @@
+#home {
+  background-color: var(--jet-black);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-banner {
+  width: 900px;
+  padding: 64px 32px;
+  position: relative;
+  margin-bottom: 75px;
+}
+
+.greetings-banner {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.greetings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  color: white;
+}
+
+.greetings h1 {
+  color: white;
+}
+
+.hello {
+  font-size: 2rem;
+}
+
+.my-name {
+  font-size: 5rem;
+  color: var(--bright-blue);
+  letter-spacing: 4px;
+  font-family: "Anton", Arial, sans-serif;
+}
+
+.my-picture {
+  max-width: 100%;
+  height: auto;
+  /* max-height: 275px; */
+  border-radius: 50%;
+  border: 5px solid var(--gray);
+}
+
+.call-to-action {
+  display: flex;
+  align-items: center;
+}
+
+.call-to-action a img {
+  color: var(--bright-blue);
+}
+
+.down-icon {
+  color: white;
+}
+
+.cta-btn {
+  position: absolute;
+  padding: 15px 50px;
+  font-size: 1.1rem;
+  border: 2px solid var(--bright-blue);
+  background-color: var(--matte-black);
+  color: var(--bright-blue);
+  letter-spacing: 3px;
+  bottom: -20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.1s ease-in;
+}
+
+.cta-btn:hover {
+  margin-bottom: 5px;
+  box-shadow: 0 0 10px 1px var(--bright-blue);
+}
+
+@media only screen and (max-width: 768px) {
+  #home {
+    padding: 15px;
+  }
+  .home-banner {
+    width: 100%;
+  }
+  .greetings-banner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .greetings {
+    margin-top: 16px;
+    text-align: center;
+  }
+  .call-to-action {
+    justify-content: center;
+  }
+  .my-picture {
+    width: 100%;
+    height: auto;
+  }
+  .cta-btn {
+    position: static;
+    bottom: unset;
+    padding: 10px 30px;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+}

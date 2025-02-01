@@ -1,0 +1,81 @@
+#about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me,
+.education {
+  width: 45%;
+  padding: 20px;
+  position: relative;
+}
+
+.about-header {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Anton";
+  margin-bottom: 15px;
+  text-decoration: underline;
+  text-decoration-color: var(--bright-blue);
+  text-decoration-thickness: 4px;
+}
+
+.about-text {
+  color: var(--gray);
+  line-height: 1.75rem;
+  text-justify: auto;
+  text-align: justify;
+}
+
+.social-icons {
+  display: flex;
+  column-gap: 20px;
+  position: absolute;
+  bottom: 25px;
+}
+
+.social-icons i {
+  font-size: 30px;
+  color: var(--gray);
+}
+
+.education-grid {
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: 2fr 5fr;
+  margin-bottom: 20px;
+}
+
+.education-grid p {
+  line-height: 1.75rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #about {
+    height: 100%;
+  }
+  .about-container {
+    display: block;
+    height: unset;
+  }
+  .about-me,
+  .education {
+    width: 100%;
+    height: 100vh;
+  }
+  .social-icons {
+    margin-top: 20px;
+    position: static;
+    bottom: unset;
+  }
+  .about-container {
+  }
+}

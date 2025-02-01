@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-blue: #66fcf1;
+  --dim-blue: #45a29e;
+  --gray: #c5c6c7;
+  --jet-black: #0b0c10;
+  --matte-black: #1f2833;
+  --greetings-font: ;
+}
+body {
+  /* font-family: Arial, sans-serif; */
+  font-family: "Roboto", sans-serif;
+  background-color: #0b0c10;
+}
+
+.pattern {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0b0c10;
+  opacity: 0.15;
+  background: linear-gradient(135deg, #1f283355 25%, transparent 25%) -40px 0/
+      80px 80px,
+    linear-gradient(225deg, #1f2833 25%, transparent 25%) -40px 0/ 80px 80px,
+    linear-gradient(315deg, #1f283355 25%, transparent 25%) 0px 0/ 80px 80px,
+    linear-gradient(45deg, #1f2833 25%, #0b0c10 25%) 0px 0/ 80px 80px;
+}
+
+.text-bright-blue {
+  color: var(--bright-blue);
+}
+
+.text-gray {
+  /* color: var(--gray); */
+  color: var(--gray);
+}
+
+.header {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Anton";
+  margin-bottom: 15px;
+  text-decoration: underline;
+  text-decoration-color: var(--bright-blue);
+  text-decoration-thickness: 4px;
+}
+
+.gray-text {
+  color: var(--gray);
+}
+
+.dim-gray-text {
+  color: var(--gray);
+  opacity: 0.8;
+}
+
+.underline-blue {
+  text-decoration: underline;
+  text-decoration-color: var(--bright-blue);
+}

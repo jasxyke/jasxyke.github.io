@@ -2,11 +2,166 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/banner.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/experiences.css" />
+    <!-- Animate on Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Font FAMILIES-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <!--tailwind-->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div>hello</div>
+    <div class="pattern"></div>
+    <section id="home">
+      <div class="home-banner">
+        <div class="greetings-banner">
+          <div class="greetings">
+            <p class="hello">Hello, I am</p>
+            <p class="my-name">JASPHER</p>
+            <p class="text-gray">
+              Aspiring full-stack web developer from the Polytechnic University
+              of the Philippines
+            </p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <img class="my-picture" src="./assets/square.jpg" alt="my image" />
+          </div>
+        </div>
+        <div class="call-to-action">
+          <a class="cta-btn" href="#about">Nice to meet you! </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about-container container">
+        <div class="about-me" data-aos="fade-right" data-aos-duration="1000">
+          <p class="about-header">ABOUT ME</p>
+          <p class="about-text">
+            Hi, I'm Jaspher Xyke M. Cortez, a BSIT student at the Polytechnic
+            University of the Philippines - San Juan. I am aspiring to be a full
+            stack web developer and fulfil my passion. <br /><br />
+            I work with JavaScript, React.js, React Native, Laravel, and
+            Tailwind CSS to build modern web and mobile applications. I enjoy
+            collaborating with teams to create efficient and user-friendly
+            solutions. As the leader of our capstone project, I thrive in
+            problem-solving and teamwork. <br /><br />
+            I'm always eager to learn and grow in the ever-evolving world of
+            technology. Let's build something amazing together!
+          </p>
+          <div class="social-icons">
+            <a href="https://github.com/jasxyke"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/jaspher-xyke-cortez-06b712230"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://www.facebook.com/jasXyke/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+        <div class="education" data-aos="fade-left" data-aos-duration="1000">
+          <p class="about-header" >EDUCATION</p>
+          <div class="education-grid">
+            <p class="about-text">2023 to the Present</p>
+            <p class="">Bachelor of Science in Information Technology <br>Polytechnic University of the Philippines – San Juan</p>
+          </div>
+          <div class="education-grid">
+            <p class="about-text">2020 to 2023</p>
+            <p>Diploma in Information Communication Technology <br> Polytechnic University of the Philippines – Sta. Mesa</p>
+          </div>
+          <div class="education-grid">
+            <p class="about-text">2017 to 2020</p>
+            <p>Senior High School Honor Student <br> AMA Computer College Pasig</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section id="experiences">
+      <p class="header" style="font-size: 2rem;">EXPERIENCES</p>
+      <div class="container experience-container">
+
+        <div class="experience" data-aos="fade-up" data-aos-duration="600">
+          <div class="img-container">
+            <img class="experience-img" src="./assets/APD.jpg" alt="apd">
+          </div>
+          <p class="dim-gray-text">04/2023 to 09/2023</p>
+          <p class=""><span class="">Intern Web Developer</span> - Asia Pacific Digital - Manila (GrowthOps Asia)</p>
+          <p class="gray-text">
+            Developed and maintained web pages according to client requests using CMS technology in collaboration with fellow developers and project managers. 
+          </p>
+          <div class="skills-capsules">
+            <p class="capsule">Javascript</p>
+            <p class="capsule">CSS</p>
+            <p class="capsule">AEM</p>
+            <p class="capsule">React JS</p>
+          </div>
+        </div>
+        <div class="experience" data-aos="fade-up" data-aos-duration="800">
+          <div class="img-container">
+            <img class="experience-img" src="./assets/PUP.svg" alt="pup">
+          </div>
+            <p class="dim-gray-text">08/2022 to 02/2023</p>
+            <p>Student Assistant - Polytechnic University of the Philippines ITECH</p>
+            <p class="gray-text">Assisted our chairperson and the registrar’s office with their daily 
+              paperwork, storage and digitizing of files, assisted fellow students, and be of service in various school events.</p>
+            <div class="skills-capsules">
+              <p class="capsule">Communication</p>
+              <p class="capsule">Attention to Detail</p>
+              <p class="capsule">Client Serice</p>
+              <p class="capsule">Organizational Skills</p>
+            </div>
+          </div>
+        <div class="experience" data-aos="fade-up" data-aos-duration="1000">
+          <div class="img-container">
+            <img class="experience-img" src="./assets/JASS.png" alt="apd">
+          </div>
+          <p class="dim-gray-text">
+            11/2019 to 12/2019
+          </p>
+          <p>On-the-job Training Installations Helper - J.A.S.S. Installation Services</p>
+          <p class="gray-text">Assisted with installing and repairing internet connections for various condos and houses</p>
+            <div class="skills-capsules">
+              <p class="capsule">Communication</p>
+              <p class="capsule">Client Serice</p>
+              <p class="capsule">Problem Solving</p>
+            </div>
+          </div>
+      </div>
+    </section>
+  
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>

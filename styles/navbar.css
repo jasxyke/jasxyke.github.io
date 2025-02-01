@@ -1,0 +1,16 @@
+nav {
+  background-color: #333;
+  overflow: hidden;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: end;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+}
+nav a:hover {
+  background-color: #575757;
+}

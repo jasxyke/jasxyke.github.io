@@ -69,10 +69,14 @@
   .education {
     width: 100%;
     margin-bottom: 50px;
+    height: unset;
   }
   .social-icons {
     margin-top: 20px;
     position: static;
     bottom: unset;
+  }
+  .education-grid {
+    display: block;
   }
 }

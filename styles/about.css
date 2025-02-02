@@ -79,4 +79,7 @@
   .education-grid {
     display: block;
   }
+  .about-header {
+    font-size: 2rem;
+  }
 }

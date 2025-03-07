@@ -37,16 +37,21 @@
 
 /* Screenshots Container */
 .screenshot-container {
-  display: none;
   width: 100%;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   z-index: 5;
+  transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 .screenshot-container.active {
-  display: block;
+  opacity: 1;
+  height: auto;
 }
 
 .screenshots {

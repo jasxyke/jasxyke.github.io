@@ -9,6 +9,7 @@
   height: 80vh;
   display: flex;
   justify-content: space-between;
+  width: 90%;
 }
 
 .about-me,

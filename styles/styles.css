@@ -31,6 +31,10 @@ body {
     linear-gradient(45deg, #1f2833 25%, #0b0c10 25%) 0px 0/ 80px 80px;
 }
 
+i {
+  margin-right: 8px;
+}
+
 .text-bright-blue {
   color: var(--bright-blue);
 }

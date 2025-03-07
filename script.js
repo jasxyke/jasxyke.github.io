@@ -8,9 +8,16 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+document.querySelectorAll(".project-desc a").forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.stopPropagation();
+  });
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".project").forEach((project) => {
-    project.addEventListener("click", function () {
+    project.addEventListener("click", function (e) {
+      e.stopPropagation();
       const screenshotContainer = this.nextElementSibling;
       if (
         screenshotContainer &&

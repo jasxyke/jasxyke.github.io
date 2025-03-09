@@ -9,7 +9,8 @@
   height: auto;
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 85%;
+  padding: 20px 0;
 }
 
 .about-me,

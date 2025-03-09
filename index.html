@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/about.css" />
     <link rel="stylesheet" href="./styles/experiences.css" />
     <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
     <!-- Animate on Scroll-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -163,10 +164,14 @@
       </div>
     </section>
     <section id="projects">
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
       <p class="title-header">PROJECTS</p>
       <div class="container projects-container">
         <div class="project" data-aos="fade-up" data-aos-duration="500">
-          <div>
+          <div class="project-img-container">
             <img class="project-img" src="./assets/dvillager.png" alt="">
           </div>
           <div class="project-desc">
@@ -222,7 +227,7 @@
         </div>
 
         <div class="project" data-aos="fade-up" data-aos-duration="800">
-          <div>
+          <div class="project-img-container">
             <img class="project-img" src="./assets/screenshots/regitech/login page.png" alt="">
           </div>
           <div class="project-desc">
@@ -253,7 +258,7 @@
           <div class="close-btn">Close</div>
         </div>
         <div class="project" data-aos="fade-up" data-aos-duration="800" style="cursor: unset;">
-          <div>
+          <div class="project-img-container">
             <img class="project-img" src="./assets/screenshots/chess/chess_ss.png" alt="">
           </div>
           <div class="project-desc">
@@ -272,7 +277,7 @@
           </div>
         </div>
         <div class="project" data-aos="fade-up" data-aos-duration="800" style="cursor: unset;" >
-          <div>
+          <div class="project-img-container">
             <img class="project-img" src="./assets/screenshots/dino/dino_game.png" alt="">
           </div>
           <div class="project-desc">
@@ -288,7 +293,7 @@
           </div>
         </div>
         <div class="project" data-aos="fade-up" data-aos-duration="800" style="cursor: unset;" >
-          <div>
+          <div class="project-img-container">
             <img class="project-img" src="./assets/screenshots/coding-exam/mockup.jpg" alt="">
           </div>
           <div class="project-desc">

@@ -32,6 +32,12 @@
   object-fit: contain;
 }
 
+.project-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .project-name {
   font-size: 1.1rem;
   margin-bottom: 10px;
@@ -63,10 +69,11 @@
 
 .screenshots {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 20px;
   row-gap: 30px;
   padding: 30px 35px;
+  justify-content: center;
 }
 
 .screenshots img {
@@ -76,6 +83,7 @@
   border-radius: 5px;
   object-fit: contain;
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .screenshots img:hover {
@@ -120,8 +128,5 @@
   }
   .screenshot-container {
     padding: 10px;
-  }
-  .screenshots {
-    grid-template-columns: 1fr; /* Stack images on smaller screens */
   }
 }

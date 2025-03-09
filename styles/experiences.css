@@ -1,5 +1,5 @@
 #experiences {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,9 +10,12 @@
   flex-direction: column;
   justify-content: space-around; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  /* grid-template-rows: repeat(auto-fit, minmax(auto, 650px)); */
+  justify-content: center;
+  margin: 0 auto;
   column-gap: 40px;
-  height: 80vh;
+  row-gap: 20px;
   width: 90%;
 }
 
@@ -55,12 +58,13 @@
     padding: 20px;
     height: unset;
   }
-  .experience-container {
+  /* .experience-container {
     display: flex;
     row-gap: 25px;
     flex-wrap: wrap;
     height: unset;
-  }
+    margin: 0 auto;
+  } */
   .experience {
     border: unset;
     box-shadow: unset;

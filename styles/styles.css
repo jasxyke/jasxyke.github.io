@@ -20,6 +20,7 @@ body {
 
 .pattern {
   position: fixed;
+  pointer-events: none;
   width: 100vw;
   height: 100vh;
   background-color: #0b0c10;
@@ -33,6 +34,10 @@ body {
 
 i {
   margin-right: 8px;
+}
+
+section {
+  margin-bottom: 5rem;
 }
 
 .text-bright-blue {

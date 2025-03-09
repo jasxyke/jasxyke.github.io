@@ -1,12 +1,12 @@
 #about {
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .about-container {
-  height: 80vh;
+  height: auto;
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -15,7 +15,7 @@
 .about-me,
 .education {
   width: 45%;
-  padding: 20px;
+  /* padding: 20px; */
   position: relative;
 }
 
